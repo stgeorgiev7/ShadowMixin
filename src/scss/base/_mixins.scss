@@ -47,3 +47,15 @@
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}
 }
+
+$elevation: (
+  1: 0px 0px 1px 1px,
+  2: 0px 0px 2px 2px,
+  3: 0px 0px 3px 3px,
+  4: 0px 0px 4px 4px,
+  5: 0px 0px 5px 5px
+);
+
+@mixin shadow($elevation) {
+  box-shadow: $elevation;
+};
